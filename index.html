@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <!-- tailWin link  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="main-section grid  md:grid-cols-2 w-3/4 mx-auto gap-10 border-b-2">
+            <div class="main-left px-4 pt-10">
+                <img src="images/mac.png" alt="mac">
+            </div>
+            <div class="main-right pt-5">
+                <h1 class="text-2xl md\:text-4xl">Customize your Blue 24-inch iMack width Apple M1 chip.</h1>
+                <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquam cumque dolores aperiam veniam culpa quis quaerat dolore odit iusto dolorem itaque totam numquam expedita voluptatum, nesciunt sapiente, placeat nostrum?</p>
+
+                <!-- memory  -->
+                <div class="mt-10">
+                    <h3 class="text-2xl mb-3">Memory</h3>
+                    <div class="grid md:grid-cols-3">
+                        <div><button id="memory-button1" class="border-2 border-purple-500 hover:border-gray-500 p-4 rounded  hover:bg-blue-300 mb-3  md:mb-0">8Gb uni9fied memory</button></div>
+                        <div><button id="memory-button2" class="border-2 border-purple-500 hover:border-gray-500 p-4 rounded  hover:bg-blue-300">16Gb uni9fied memory</button></div>
+                    </div>
+                </div>
+
+                <!-- Strong  -->
+                <div class="mt-10">
+                    <h3 class="text-2xl mb-3">Strong</h3>
+                    <div class="grid md:grid-cols-3">
+                        <div><button id="strong-button1" class="border-2 border-purple-500 hover:border-gray-500 p-4 rounded  hover:bg-blue-300 mb-3  md:mb-0">256GB SSD Strong</button></div>
+                        <div><button id="strong-button2" class="border-2 border-purple-500 hover:border-gray-500 p-4 rounded  hover:bg-blue-300 mb-3  md:mb-0">512GB SSD Strong</button></div>
+                        <div><button id="strong-button3" class="border-2 border-purple-500 hover:border-gray-500 p-4 rounded  hover:bg-blue-300">1TB SSD Strong</button></div>
+                    </div>
+                </div>
+
+                <!-- Chose Your dellevary option  -->
+                <div class="mt-10">
+                    <h3 class="text-2xl mb-3">Chose your delivary option</h3>
+                    <div class="grid md:grid-cols-2">
+                        <div><button id="delivary-button1" class="border-2 border-purple-500 hover:border-gray-500 p-4 rounded  hover:bg-blue-300 mb-3  md:mb-5">September 12 Free prime Delivary</button></div>
+                        <div><button id="delivary-button2" class="border-2 border-purple-500 hover:border-gray-500 p-4 rounded  hover:bg-blue-300">September 19 Delivary charge $20</button></div>
+                    </div>
+                </div>
+                <!-- product total price  -->
+                <div class=" w-3/4 mt-10">
+                    <table class="table-auto">
+                        <tbody>
+                          <tr class="border-b-2 py-1">
+                            <td class="pr-10 text-xl">Best price</td>
+                            <td>$<span id="best-number">1299</span></td>
+                          </tr>
+                          <tr class="border-b-2 py-1">
+                            <td class="pr-10 text-xl">Extra Memory Cost</td>
+                            <td>$<span id="memory-number">0</span></td>
+                          </tr>
+                          <tr class="border-b-2 py-1">
+                            <td class="pr-10 text-xl">Extra Storng Cost</td>
+                            <td>$<span id="storng-number">0</span></td>
+                          </tr>
+                          <tr class="border-b-2 border-black py-1">
+                            <td class="pr-10 text-xl">Delivery charge</td>
+                            <td>$<span id="delivary-number">0</span></td>
+                          </tr>
+                          <tr class="border-b-2 text-2xl">
+                            <td class="pr-10 py-1">Total Price</td>
+                            <td>$<span id="total-number">1299</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <!-- promo code  -->
+                <div class="mt-8 mb-5">
+                    <input id="cupon-input" class="border p-2 rounded" type="text" placeholder="cupon code">
+                    <button id="apply-button" class="bg-red-600 text-white px-5 py-2 rounded">Apply</button>
+                </div>
+            </div>
+        </section>
+        <!-- Total Amount Section -->
+        <div class="my-5">
+            <p class="text-center text-3xl">Total: $<span id="final-total-number">1299</span></p>
+        </div>
+    </main>
+
+<!-- javascript link  -->
+<script src="javascript/app.js"></script>
+</body>
+</html>
